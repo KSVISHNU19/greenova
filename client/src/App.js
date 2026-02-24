@@ -12,7 +12,7 @@ function App() {
   );
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://greenova-pme8.onrender.com/products")
       .then((res) => res.json())
       .then((data) => setPlants(data))
       .catch((err) => console.log(err));
